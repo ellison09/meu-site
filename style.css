@@ -8,21 +8,44 @@ body {
 }
 
 .container {
-    width: 400px;
-    padding: 20px;
+    width: 450px;
+    margin: 0 auto;
+    padding: 25px;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.container input[type="email"],
-.container input[type="password"],
-.container button[type="submit"] {
+.container h1 {
+    margin-bottom: 1px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-box {
+    flex: 1;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 25px;
+}
+
+.form-box h2 {
+    margin-bottom: 10px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"],
+.form-box button[type="submit"] {
     display: block;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 8px;
+    margin-bottom: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -39,12 +62,6 @@ body {
     background-color: #45a049;
 }
 
-.success {
-    color: green;
-    margin-top: 10px;
-}
-
-.error {
-    color: red;
+#message {
     margin-top: 10px;
 }
